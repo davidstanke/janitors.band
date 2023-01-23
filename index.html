@@ -1,6 +1,183 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    Yo. 🎸
-  </body>
+<head>
+	<title>THE JANITORS!!!</title>
+	<link media="screen" rel="stylesheet" href="css/colorbox.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<style type="text/css">
+		body {
+		    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+		    color:white;
+		    text-shadow: black 1px 1px 0px;
+		   }
+		   
+		   strong, em, b, i {
+			   font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+		   }
+		  
+		  a {
+		  	text-decoration:none;
+		  	outline:none;
+		  	}
+		   
+		 a:hover {
+		 	text-decoration:underline;
+		 }
+		 
+		 a:hover img {
+		 	text-decoration:none;
+		 }
+		 
+		   
+		.container {
+			position:relative;
+			width:800px;
+			height:600px;
+			margin:0 auto;
+			background-image:url('images/band.jpg');
+			background-repeat:no-repeat;
+			background-position:bottom right;
+		}
+		   
+		   .album {
+		   	width:10em;
+		   	height:10em;
+		   	box-shadow:.5em .5em .5em rgba(0,0,0,.7)
+		   }
+		   
+		   .album.active {
+		   	width:30em;
+		   	height:30em;
+		   }
+		   
+		   #album_tracks {
+		   	color:black;
+		   	text-shadow:none;
+		   	overflow:auto;
+		   	font-size:1em;
+		   	line-height:140%;
+		   }
+		   
+		   #donate {
+		   	font-size:.6em;
+		   	line-height:130%;
+		   	float:right;
+		   	text-align:center;
+		   	text-decoration:none;
+		   	color:white;
+		   	padding:.5em 1em;
+		   	border-radius:1em;
+		   	box-shadow:.25em .25em .25em rgba(0,0,0,.3);
+		   	margin:0 .5em;
+		   	background: rgb(122,188,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgb(122,188,255) 0%, rgb(96,171,248) 44%, rgb(64,150,238) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(122,188,255)), color-stop(44%,rgb(96,171,248)), color-stop(100%,rgb(64,150,238))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%); /* W3C */
+		   }
+		   
+		   #donate b {
+		   	font-size:1.5em;
+		   }
+		   
+	</style>
+
+	<script>
+		$(document).ready(function(){
+			$(".albumLink").colorbox({width:"600px",height:"570px;",inline:true,href:"#album_tracks"});
+		});
+	</script>
+</head>
+<body style="background-color:black;">
+
+<div class="container">
+	<div style="float:left;">
+		<img src="images/logo.png">
+	</div>
+	
+	<div style="-webkit-box-shadow:0 0 1em hsla(0, 0%, 0%, 1.0);-moz-box-shadow:0 0 1em hsla(0, 0%, 0%, 1.0);box-shadow:0 0 1em hsla(0, 0%, 0%, 1.0);position:absolute;left:2em;bottom:2em;width:22em;color:white;font-size:.8em;line-height:1.4em;margin-left:150px;background-color:rgba(0,0,0,.5);padding:1em;">
+		<!--
+		<b>LIVE ROCK SHOW!</b><br>
+
+		<b>Saturday, October 29: 7:00pm - 8:00pm</b><br>
+		<a href="http://www.thenationalunderground.com" style="color:red;">The National Underground</a><br>
+		159 East Houston St. NYC<br>
+		Subway: 2nd Ave. (F train)<br>
+		Only $7
+		-->
+		Thanks to everyone who came out to the show! Now get the album! &rArr;
+	</div>
+	
+	<div style="position:absolute;right:2em;bottom:1.5em;">
+
+		The Debut Album:<br>
+		<a href="#" class="albumLink"><img src="images/janitors_sweeping-the-nation_cover.gif" class="album" border="0"></a>
+	</div>
+</div>
+<div style="text-align:center;">
+	<div style="margin:auto;padding-left:110px;" >
+			<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) {return;}
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		
+		<div class="fb-like" data-href="http://www.facebook.com/thejanitors" data-send="false" data-width="520" data-show-faces="true" data-colorscheme="dark"></div>
+
+	</div>
+	</div>
+	
+<div style="display:none;">
+	<div id="album_tracks">
+		
+		<div style="float:right">
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="donate" target="_blank">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="8JBP7J9BKNHNJ">
+
+			<a href="#" onClick="$('#donate').submit();return false" target="_blank" style="color:white">These songs are FREE!<br>But perhaps you'd like to<br><b>Donate</b><br>Suggested Donation: $10</a>
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+		</div>
+		<img src="images/janitors_sweeping-the-nation_cover.gif" style="width:4em;height:4em;float:left;margin-right:.5em;" border="0">
+		The Janitors<br>
+
+		<b>Sweeping The Nation</b>
+		<div style="clear:both;border-top:1px solid #ccc;"></div>
+		<br>
+		<a href="audio/00-TheJanitors-SweepingTheNation.zip" style="border:1px solid #eee;border-radius:.5em;padding:1em;background-color:#f5f5f5;margin-left:.25em"><img src="images/zipicon.png" style="width:2.5em;height:2.5em;vertical-align:middle;margin-right:.5em;" border="0">Sweeping the Nation - Complete (ZIP archive)</a>
+		<div style="clear:both;margin:1em;">
+			<div style="clear:both;margin-left:1em;">
+				<a href="audio/01-TheJanitors-SweepingTheNation-Electrachrist.mp3">1. Electrachrist</a><br>
+
+				<a href="audio/02-TheJanitors-SweepingTheNation-Hammer.mp3">2. Hammer</a><br>
+				<a href="audio/03-TheJanitors-SweepingTheNation-TrustMyself.mp3">3. Trust Myself</a><br>
+				<a href="audio/04-TheJanitors-SweepingTheNation-OutOfRange.mp3">4. Out of Range</a><br>
+				<a href="audio/05-TheJanitors-SweepingTheNation-FollowTheLeader.mp3">5. Follow the Leader</a><br>
+				<a href="audio/06-TheJanitors-SweepingTheNation-WhyWhyWhy.mp3">6. Why Why Why</a><br>
+				<a href="audio/07-TheJanitors-SweepingTheNation-AllTheFuss.mp3">7. All the Fuss</a><br>
+
+				<a href="audio/08-TheJanitors-SweepingTheNation-ShowMeWhereItHurts.mp3">8. Show Me Where It Hurts</a><br>
+				<a href="audio/09-TheJanitors-SweepingTheNation-PsychoKiller.mp3">9. Psycho Killer</a><br>
+				<a href="audio/10-TheJanitors-SweepingTheNation-StandUpAndFight.mp3">10. Stand Up and Fight</a><br>
+				<a href="audio/11-TheJanitors-SweepingTheNation-AllMessedUp.mp3">11. All Messed Up</a><br>
+			</div>
+		<div style="border-top:1px solid #ccc;margin-top:1em;">
+			<b style="font-size:.7em;">bonus tracks:</b><br>
+
+			<a href="audio/X1-TheJanitors-BSides-RiseAgain.mp3">Rise Again</a><br>
+			<a href="audio/X2-TheJanitors-BSides-MakeYouWantMe.mp3">Make You Want Me</a><br>
+		</div>	
+		</div>
+	</div>
+</div>
+
+</body>
 </html>
